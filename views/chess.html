@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ gameId }}</title>
+    <!-- load jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2"
+    crossorigin="anonymous" ></script>
+    <!-- chess-->
+    <link rel="stylesheet" href="/css/chessboard-1.0.0.min.css">
+    <script src="/js/chessboard-1.0.0.min.js"></script>
+    <script defer src="/chess.js"></script>
+</head>
+<body data-gameid="{{ gameId }}" data-orientation="{{ orientation }}" >
+    <h1>Game Id: <code> {{ gameId }} </code></h1>
+    <h2> <a href="/">Back</a> </h2>
+    <section>
+        <div id="chess" style="width:400px"></div>
+    </section>
+</body>
+</html>
